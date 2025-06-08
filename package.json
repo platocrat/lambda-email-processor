@@ -1,0 +1,25 @@
+{
+  "name": "lambda-email-processor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": {
+    "name": "Jack Winfield",
+    "email": "platocrat@acm.org",
+    "url": "https://github.com/platocrat"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/platocrat/lambda-email-processor"
+  },
+  "scripts": {
+    "build": "zip -r lambda-email-processor.zip index.js node_modules/ lib/ services/ utils.js package.json package-lock.json"
+  },
+  "description": "A simple email processor for AWS Lambda",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.826.0",
+    "@aws-sdk/client-s3": "^3.826.0",
+    "@aws-sdk/client-sqs": "^3.826.0",
+    "@aws-sdk/lib-dynamodb": "^3.826.0",
+    "openai": "^5.1.1"
+  }
+}
